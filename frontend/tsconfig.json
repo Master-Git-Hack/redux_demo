@@ -18,14 +18,16 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@redux/*":["./src/store/*"],
-      "@reducers/*":["./src/store/reducers/*"],
+      "@slices/*":["./src/store/slices/*"],
       "@actions/*":["./src/store/actions/*"],
       "@redux-api/*":["./src/store/api/*"],
       "@fetch/*":["./src/api/*"],
-      "@api/*":["./src/api/*"],
+      "@api/*":["./src/app/api/*"],
+      "@components/*":["./src/components/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
